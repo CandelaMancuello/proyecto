@@ -1,0 +1,72 @@
+.carousel-control {
+    background-color: #000;
+    opacity: 1;
+}
+body {
+    background-color:#000000    ;
+}
+#navegadorpersonalizado{
+    background-color: #F58D01;
+    padding: 2em;
+}
+.nav{
+    padding-top: 1.5em;
+
+}
+.-col-md-7order-md-2 {
+    padding-left: 6em;
+}
+
+
+/*PLAY LIST*/
+.playlistSecundarias{
+    padding-left: 6em;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+
+}
+
+/*FUENTES*/
+.barlow-condensed-light {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+h2, p , a{
+  
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: aliceblue;
+      }
+  h2{
+    color: #F58D01;
+    ;
+  }
+  .barlow-condensed-bold {
+    font-family: "Barlow Condensed", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+.Barlow a  {
+    
+        font-family: "Barlow Condensed", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size:x-large;
+      }
+  
+.relacionados{
+    justify-content: center;
+}
+.relacionados h3{
+    color:#009FF5;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:x-large;
+ 
+
+
+}
