@@ -29,11 +29,39 @@
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body> 
+<body> <a href="#"><img src="img/home/logo.jpg" alt="misitio" class="img-responsive no-fw center-block" width="600"></a>
   <div id="navegadorpersonalizado">
-  <a href="#"><img src="img/home/logo.jpg" alt="misitio" class="img-responsive no-fw center-block" width="600"></a>
+  
                  <div class="Barlow">
-    <div class="nav-scroller py-1 mb-3 border-bottom">
+
+                  <nav class="navbar navbar-expand-sm bg-dark border-bottom">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="nav navbar-nav justify-content-between w-100">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">INICIO</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">BIOGRAFIA</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">DISCOGRAFIA</a>
+                          </li>  
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">PARA VOS!</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACTAR</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+
+                  <!-- <div class="nav-scroller py-1 mb-3 border-bottom">
         <nav class="nav nav-underline justify-content-between">
           <a class="nav-item nav-link link-body-emphasis active" href="#">INICIO</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">BIOGRAFIA</a>
@@ -42,9 +70,10 @@
           <a class="nav-item nav-link link-body-emphasis" href="#">CONTACTAR</a>
                  
         </nav>
-      </div>
-                 </div>
-    </div>
+      </div>-->
+   
+              
+    </div> </div>
       <div class="container">
         <br>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -130,48 +159,101 @@
     <hr class="featurette-divider">
 
     <div class="row featurette">
+      <!--canciones para reproducir play list-->
   
-             <div class="col-md-7 order-md-2">
+             <div class="col-md-7 order-md-2 d-none d-lg-block">
                 <div class="playlistSecundarias">
-
-              <h2 id="song-titleUno">my kind of woman</h2>  
-              <img id="album-coverUno" src="img/home/mykind.jpeg" alt="Portada del álbum" class="img-fluid" width="100" height="100" >  
-              <br>  
-              <audio id="audioPlayerUno" src="canciones/playlist/cancionUno.mp3" preload="auto"></audio> 
-              
-             <button id="buttonUno" class="btn btn-primary mt-3">Reproducir</button>
-
-
-              <h2 id="song-titleDos">For the First Time</h2>  
-              <img id="album-coverDos" src="img/home/tapa.jpg" alt="Portada del álbum" class="img-fluid" width="100" height="100" >  
-              <br>  
-              <audio id="audioPlayerDos" src="" preload="auto"></audio>  
-              <button id="buttonDos" class="btn btn-primary mt-3">Reproducir</button>
-
-
-
-              <h2 id="song-titleTres">Heart to Heart </h2>  
-              <img id="album-coverTres" src="img/home/hearttoheart.jpeg" alt="Portada del álbum" class="img-fluid" width="100" height="100" >  
-              <br>  
-              <audio id="audioPlayerTres" src="" preload="auto"></audio>  
-              <button id="buttonTres" class="btn btn-primary mt-3">Reproducir</button>
+                  <div class="audiocssestilo mb-4">
+                    <h2 id="song-titleUno">My kind of woman</h2>  
+                      <img id="album-coverUno" src="img/home/mykind.jpeg" alt="Portada del álbum" class="img-fluid" width="100" height="100" >  
+                      <br>    
+                      <audio id="myAudio" class="myAudio" controls>
+                        <source src="canciones/playlist/cancionuno.mp3" type="audio/mpeg">
+                      </audio>
+                      <p class="demoUno"></p> 
+                  </div>
+             
+                  <div class="audiocssestilo mb-4">
+                    <h2 id="song-titleDos">For the First Time</h2>  
+                    <img id="album-coverDos" src="img/home/tapa.jpg" alt="Portada del álbum" class="img-fluid" width="100" height="100" >  
+                    <br>  
+                    <audio id="myAudioDos" class="myAudioDos" controls>
+                      <source src="canciones/playlist/canciondos.mp3" type="audio/mpeg">
+                    </audio>
+                    <p class="demoDos"></p>    
+                  </div>
+             
+                  <div class="audiocssestilo mb-4"> 
+                    <h2 id="song-titleTres">Heart to Heart</h2>  
+                    <img id="album-coverUno" src="img/home/hearttoheart.jpeg" alt="Portada del álbum" class="img-fluid" width="100" height="100" >  
+                    <br>  
+                    <audio id="myAudioTres" class="myAudioTres" controls>
+                      <source src="canciones/playlist/canciontres.mp3" type="audio/mpeg">
+                    </audio>
+                    <p class="demoTres"></p>
+                  </div>
                 </div> 
              </div> 
 
+             <!--Mobile-->
+             <div class="container d-block d-lg-none mobile-playlist">
+                <div class="row justify-content-center text-center mb-4">
+                  <div class="col col-3">
+                    <img src="img/home/mykind.jpeg" alt="Portada del álbum" class="img-fluid" width="100" height="100">  
+                  </div>
+                  <div class="col col-6"> <!-- Ocupa 9 columnas y centra el contenido -->
+                    <div class="text-left">
+                      <h2 id="song-titleUno">My kind of woman</h2>  
+                      <audio id="myAudio" class="myAudio" controls="">
+                        <source src="canciones/playlist/canciondos.mp3" type="audio/mpeg">
+                      </audio>
+                    </div>
+                  </div>
+               </div>
 
+              <div class="row justify-content-center text-center mb-4">
+                <div class="col col-3">
+                  <img src="img/home/tapa.jpg" alt="Portada del álbum" class="img-fluid" width="100" height="100">  
+                </div>
+                <div class="col col-6"> <!-- Ocupa 9 columnas y centra el contenido -->
+                  <div class="text-left">
+                    <h2 id="song-titleDos">For the First Time</h2>  
+                    <audio id="myAudio" class="myAudio" controls="">
+                      <source src="canciones/playlist/cancionuno.mp3" type="audio/mpeg">
+                    </audio>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center text-center mb-4">
+                <div class="col col-3">
+                  <img src="img/home/hearttoheart.jpeg" alt="Portada del álbum" class="img-fluid" width="100" height="100">  
+                </div>
+                <div class="col col-6"> <!-- Ocupa 9 columnas y centra el contenido -->
+                  <div class="text-left">
+                    <h2 id="song-titleTres">Heart to Heart</h2>  
+                    <audio id="myAudio" class="myAudio" controls="">
+                      <source src="canciones/playlist/canciontres.mp3" type="audio/mpeg">
+                    </audio>
+                  </div>
+                </div>
+              </div>
+             </div>
 
       <!--GRANDE cancion principal-->
-      <div class="col-md-5 order-md-1">
+      <div class="col-lg-5 order-md-1 text-center">
         <h2 id="song-titleCuatro">Chamber of reflection - Mac DeMarco</h2>  
-        <img id="album-coverCuatro" src="img/home/cancionprincipal.jpg" alt="Portada principal" class="img-fluid" width="400" height="400" >  
+        <img id="album-coverCuatro" src="img/home/cancionprincipal.jpg" alt="Portada principal" class="img-fluid mb-4" width="400" height="400" >  
         <br>  
-        <audio id="audioPlayerCuatro" src="" preload="auto"></audio>  
-        <button id="buttonCuatro" class="btn btn-primary mt-3">Reproducir</button>  
+        <audio class="myAudioPrincipal p-0" controls>
+          <source src="canciones/playlist/principal.mp3" type="audio/mpeg">
+        </audio>
+        <p class="demoPrincipal"></p>
       </div>
     </div>
 
     <hr class="featurette-divider">
-               
+               <!--artistas relacionados-->
     <div class="container text-center">
       <div class="relacionados">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">  
@@ -190,5 +272,5 @@
       <p>Pagina realizada por <a href="poner un mail >" class="text-white">Candela</a>, by <a href="https://twitter.com/mdo" class="text-white">@dela</a>. MACDEMARCO © COPYRIGHT  2024</p>
     </footer>
 </body>
-<script src="funcionalidades.js"></script> 
+<script src="js/funcionalidades.js"></script> 
 </html> 

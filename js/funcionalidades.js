@@ -1,27 +1,36 @@
-const audioPlayerUno = document.getElementById('audioPlayer');
-const buttonUno= document.getElementById('buttonUno');
+//funciones para el audio que esta en el HOME HTML/
+ let uno;
+ let dos;
+ let tres;
+ let principal;
 
-buttonUno.addEventListener('click', function() {
-     audioPlayerUno.play(); 
-});
-const audioPlayerDos = document.getElementById('audioPlayer');
-const buttonDos= document.getElementById('button');
-
-button.addEventListener('click', function() {
-     audioPlayerDos.play(); 
-});
-
-const audioPlayerTres = document.getElementById('audioPlayer');
-const buttonTres= document.getElementById('button');
-
-button.addEventListener('click', function() {
-     audioPlayerTres.play(); 
-});
-const audioPlayerCuatro = document.getElementById('audioPlayer');
-const buttonCuatro= document.getElementById('button');
-
-button.addEventListener('click', function() {
-     audioPlayerCuatro.play(); 
-});
+function myFunction() {
+  uno = document.querySelector("myAudio").audioTracks.length;
+  document.querySelector("demoUno").innerHTML = x;
+}
 
 
+
+
+function myFunction() {
+      dos  = document.querySelector("myAudioDos").audioTracks.length;
+      document.querySelector("demoDos").innerHTML = x;
+    }
+
+    
+
+    
+function myFunction() {
+      tres = document.querySelector("myAudioTres").audioTracks.length;
+      document.querySelector("demoTres").innerHTML = x;
+    }
+
+    
+
+    
+function myFunction() {
+      principal = document.querySelector("myAudioPrincipal").audioTracks.length;
+      document.querySelector("demoPrincipal").innerHTML = x;
+    }
+
+    

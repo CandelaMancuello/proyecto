@@ -8,6 +8,7 @@ body {
 #navegadorpersonalizado{
     background-color: #F58D01;
     padding: 2em;
+    justify-content: center;
 }
 .nav{
     padding-top: 1.5em;
@@ -69,4 +70,15 @@ h2, p , a{
  
 
 
+}
+.audiocssestilo{
+display: flex;
+}
+.myAudio, .myAudioDos, .myAudioTres, .myAudioPrincipal{
+  width: 60%;
+  padding-left: 3em;
+
+}
+#album-coverTres{
+  margin-left: 28px;
 }
