@@ -33,4 +33,24 @@ function myFunction() {
       document.querySelector("demoPrincipal").innerHTML = x;
     }
 
-    
+// Selecciona todos los elementos <audio> en la página
+var audios = document.querySelectorAll('audio');
+
+// Recorre cada elemento de audio
+for (var i = 0; i < audios.length; i++) {
+
+    // Escucha si le diste play
+    audios[i].addEventListener('play', function() {
+
+        // Si le diste play, pausa todos los demas, menos al que diste play
+        for (var j = 0; j < audios.length; j++) {
+            if (audios[j] !== this) {
+                audios[j].pause();
+                audios[j].currentTime = 0;
+            }
+        }
+    });
+}
+  
+
+

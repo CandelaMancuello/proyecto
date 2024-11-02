@@ -74,6 +74,11 @@ h2, p , a{
 .audiocssestilo{
 display: flex;
 }
+
+.audiocssestilo h2 {
+  width: 135px;
+}
+
 .myAudio, .myAudioDos, .myAudioTres, .myAudioPrincipal{
   width: 60%;
   padding-left: 3em;
@@ -81,4 +86,25 @@ display: flex;
 }
 #album-coverTres{
   margin-left: 28px;
+}
+
+.navbar {
+  background-color: #F58D01 !important;
+}
+
+.navbar-toggler {
+  --bs-navbar-toggler-border-color: rgb(0, 159, 245);
+  background-color: #009FF5 !important;
+}
+
+.nav-link {
+  color: #000000;
+}
+
+.mobile-playlist h2 {
+  margin: 0 0 20px 0;
+}
+
+.mobile-playlist audio {
+  padding:0;height:35px;
 }
