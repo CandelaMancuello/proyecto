@@ -152,6 +152,10 @@ font-size: medium;
 .col-lg-8 h6{
   font-size: x-large;
 }
+.igualar{
+  font-size: x-large;
+  padding-top: 17px;
+}
 
 /*Footer*/
 .footeredit{
@@ -164,6 +168,13 @@ font-size: large;
  background-color: #009FF5;
 }
 
+
+
+/*PAGINA DISCOGRAFIA */
+.card-text{
+  color:#000;
+  font-weight: bold;
+}
 
 @media (max-width: 767px) {
   .recent-post {
