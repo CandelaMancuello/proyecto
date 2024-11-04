@@ -54,3 +54,26 @@ for (var i = 0; i < audios.length; i++) {
   
 
 
+//////////////////////////////////////
+//pagina de ENTREVISTAS
+let videoEntrevista;
+let videoPerformance;
+videoEntrevista =document.getElementById("entrevista");
+videoPerformance =document.getElementById("fullvideo");
+
+
+
+botonEntrevista = document.querySelector("buttonEntrevista");
+botonPerformance = document.querySelector("buttonFull");
+
+
+botonEntrevista.addEventListener('click', function(){
+
+      
+
+
+  
+
+
+});
+

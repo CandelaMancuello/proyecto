@@ -53,3 +53,4 @@ document.getElementById('submit-comment').addEventListener('click', addComment);
 
 // Cargar comentarios al inicio  
 loadComments();
+
