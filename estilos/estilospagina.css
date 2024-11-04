@@ -1,3 +1,8 @@
+.carousel-inner img {
+  width: 70%;
+  margin: auto;
+}
+
 .carousel-control {
     background-color: #000;
     opacity: 1;
@@ -107,4 +112,61 @@ display: flex;
 
 .mobile-playlist audio {
   padding:0;height:35px;
+}
+
+/*PAGINA BIOGRAFIA*/
+.estilosbiografia p{
+  font-size: larger;
+}
+/*
+.left.carousel-control {
+
+}
+
+.left.glypicon {
+
+}*/
+
+.blog-post p {
+
+  /*font-weight:bold;*/
+  line-height: 1.5;
+  
+  font-size: 25px;
+
+}
+.estilosbiografia article h2{
+color: #F58D01 !important;
+
+}
+
+/*columnas derecha*/
+.col-lg-8{
+color: white;
+font-size: medium;
+
+
+
+
+}
+.col-lg-8 h6{
+  font-size: x-large;
+}
+
+/*Footer*/
+.footeredit{
+padding: 2em;
+color:white;
+font-size: large;
+
+}
+.ms-3{
+ background-color: #009FF5;
+}
+
+
+@media (max-width: 767px) {
+  .recent-post {
+        height: 100% !important;
+   }
 }
