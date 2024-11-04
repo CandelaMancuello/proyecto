@@ -8,7 +8,7 @@
     opacity: 1;
 }
 body {
-    background-color:#000000    ;
+    background-color:#000000;
 }
 #navegadorpersonalizado{
     background-color: #F58D01;
@@ -173,8 +173,27 @@ font-size: large;
 /*PAGINA DISCOGRAFIA */
 .card-text{
   color:#000;
+  font-size: larger;
   font-weight: bold;
 }
+/*CARD TAMAÑOS BIEN*/ 
+p.card-text, .card-body{
+  background-color: #357BA1    ;
+}
+.fondodiscografia{
+  background-color:#000 !important;
+}
+/*ANIMACIONES IMAGENES DISCOGRAFIA Y WALPAPERS*/
+
+.col-md-4:hover  {-webkit-transform:scale(0.8);transform:scale(0.8);}
+.col-md-4{overflow:hidden;}
+
+
+
+
+
+
+
 
 @media (max-width: 767px) {
   .recent-post {
