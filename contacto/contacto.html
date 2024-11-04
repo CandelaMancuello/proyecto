@@ -46,7 +46,7 @@
                             <a class="nav-link" href="../wallpapers/wallpapers.html">WALLPAPERS</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">FORO</a>
+                            <a class="nav-link" href="../foro/foro.html">FORO</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="../entrevista/entrevista.html">ENTREVISTA</a>
@@ -61,32 +61,84 @@
                 </nav>
   </div>
 
+<!--contenido de contacto o login-->
+
+
+
+<main class="contenedorestilosForm">
+    
+    <!-- Botón que dispara el modal -->
+    <form class="formulario">
+      <div class="form-floating mb-3">
+         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+         <label class="text-dark" for="floatingInput">escribe tu mail</label>
+       </div>
+       <div class="form-floating mb-3">
+         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+         <label class="text-dark"  for="floatingTextarea">deja tu comentario aquí</label>
+       </div>
+     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#emailModal">
+       Enviar Email
+     </button>
+     </form>
+     
+     <!-- Modal -->
+     <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title text-dark" id="emailModalLabel">Correo ENVIADO</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body text-dark">
+             ¡Tu correo ha sido enviado con éxito!
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+           </div>
+         </div>
+       </div>
+     </div>
+    
+     
+    </main>
+    
+    <script src="../js/funcionalidades.js"></script>
+    </body>
+    </html>
 
 
 
 
-    <div class="container mt-5"> 
-        <h2>Conoce la comunidad - Fans De Argentina</h2> 
-        <h1>Comentarios -MAC DEMARCO</h1>  
-        <textarea id="comment-input" class="form-control mb-3" placeholder="Escribe tu comentario aquí..." rows="3"></textarea>  
-        <button id="submit-comment" class="btn btn-primary">Enviar Comentario</button>  
-        <hr>  
-        <h2>Comentarios</h2>  
-        <div id="comments-list" class="row row-cols-1 row-cols-md-3 g-4 mt-3"></div>  
-    </div>  
 
 
-    <div class="container footeredit">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
-          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <div class="container footeredit">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+      </div>
+  
       
-          
-        </footer>
-    <script src="foroenviar.js"></script>  
+    </footer>
+<script src="</script>  
 </body>  
 </html>
