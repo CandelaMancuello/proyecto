@@ -6,7 +6,7 @@
 
 function myFunction() {
   uno = document.querySelector("myAudio").audioTracks.length;
-  document.querySelector("demoUno").innerHTML = x;
+  document.querySelector("demoUno").innerHTML = '';
 }
 
 
@@ -14,7 +14,7 @@ function myFunction() {
 
 function myFunction() {
       dos  = document.querySelector("myAudioDos").audioTracks.length;
-      document.querySelector("demoDos").innerHTML = x;
+      document.querySelector("demoDos").innerHTML = '';
     }
 
     
@@ -22,7 +22,7 @@ function myFunction() {
     
 function myFunction() {
       tres = document.querySelector("myAudioTres").audioTracks.length;
-      document.querySelector("demoTres").innerHTML = x;
+      document.querySelector("demoTres").innerHTML = '';
     }
 
     
@@ -84,9 +84,8 @@ const botonEnviar = document.getElementsByClassName("btn btn-primary")[0];
 const email = document.getElementsByClassName("form-control")[0];
 const comentario = document.getElementById("floatingTextarea");
 
-// Al hacer clic en el botón de empezar, ocultamos el botón y el formulario, y mostramos una imagen de justin
 botonEnviar.addEventListener('click', function() {
-    // Verifica que ambos campos no estén vacíos
+    // Verifica que no estén vacíos
     if (email.value.trim() === "" || comentario.value.trim() === "") {
         alert("Por favor, completa ambos campos antes de enviar.");
     } else {
