@@ -188,8 +188,10 @@ p.card-text, .card-body{
 .col-md-4:hover  {-webkit-transform:scale(0.8);transform:scale(0.8);}
 .col-md-4{overflow:hidden;}
 
-
-
+/*PAGINA WALLPAPERS*/
+.fondodiscografiaWall{
+    background-color: #32414A !important;
+}
 
 
 
