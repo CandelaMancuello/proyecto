@@ -1,23 +1,36 @@
-.carousel-inner img {
-  width: 70%;
-  margin: auto;
-}
-
-.carousel-control {
-    background-color: #000;
-    opacity: 1;
-}
 body {
-    background-color:#000000;
+  background-color:#000000;
 }
 #navegadorpersonalizado{
-    background-color: #F58D01;
-    padding: 2em;
-    justify-content: center;
+  background-color: #F58D01;
+  padding: 1em;
 }
 .nav{
-    padding-top: 1.5em;
+  padding-top: 1em;
 
+}
+.navbar {
+  background-color: #F58D01 !important;
+ 
+}
+.nav-link {
+  color: #000000;
+}
+.nav-item{
+padding-left: 3em;
+padding-right:3em;
+}
+.barlow-condensed-light {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+h2, p, a {
+
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: rgb(242, 243, 245);
 }
 .-col-md-7order-md-2 {
     padding-left: 6em;
@@ -56,12 +69,15 @@ h2, p , a{
     font-style: normal;
   }
 .Barlow a  {
-    
-        font-family: "Barlow Condensed", serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size:x-large;
-      }
+    font-family: "Barlow Condensed", serif;
+    font-weight: 700 !important;
+    font-style: normal;
+    font-size:x-large;
+}
+
+.Barlow .dropdown-menu>li>a {
+    font-size: large;
+}
   
 .relacionados{
     justify-content: center;
@@ -183,10 +199,10 @@ p.card-text, .card-body{
 .fondodiscografia{
   background-color:#000 !important;
 }
-/*ANIMACIONES IMAGENES DISCOGRAFIA Y WALPAPERS*/
+/*ANIMACIONES IMAGENES DISCOGRAFIA*/
 
-.col-md-4:hover  {-webkit-transform:scale(0.8);transform:scale(0.8);}
-.col-md-4{overflow:hidden;}
+.fondodiscografia .col-md-4:hover  {-webkit-transform:scale(0.8);transform:scale(0.8);}
+.fondodiscografia .col-md-4{overflow:hidden;}
 
 /*PAGINA WALLPAPERS*/
 .fondodiscografiaWall{
