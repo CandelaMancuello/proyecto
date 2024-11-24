@@ -223,9 +223,11 @@ p.card-text, .card-body{
 }
 
 
+/*pagina de  biografia desarrollador*/ 
+.centrarcaja{
+  justify-content:  center !important;
 
-
-
+}
 
 
 
