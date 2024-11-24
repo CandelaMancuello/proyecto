@@ -54,16 +54,22 @@
     </div>
   </nav>
   </div>  
-    <div class="container mt-5"> 
-        <h2>Conoce la comunidad - Fans De Argentina</h2> 
-        <h1>Comentarios -MAC DEMARCO</h1>  
-        <textarea id="comment-input" class="form-control mb-3" placeholder="Escribe tu comentario aquí..." rows="3"></textarea>  
-        <button id="submit-comment" class="btn btn-primary">Enviar Comentario</button>  
-        <hr>  
-        <h2>Comentarios</h2>  
-        <div id="comments-list" class="row row-cols-1 row-cols-md-3 g-4 mt-3"></div>  
-    </div>  
+  <div class="container mt-4">  
+    <h2>Formulario de comentarios</h2>  
+    <form id="foroForm">  
+        <div class="form-group">  
+            <label for="nombre">Nombre:</label>  
+            <input type="text" class="form-control" id="nombre" required>  
+        </div>  
+        <div class="form-group">  
+            <label for="comentarios">Comentario:</label>  
+            <textarea class="form-control" id="comentarios" required></textarea>  
+        </div>  
+        <button type="submit" class="btn btn-primary">Enviar</button>  
+    </form>  
 
+    <div id="resultado" class="mt-4"></div>  
+</div> 
 
     <div class="container footeredit">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
