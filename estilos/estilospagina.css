@@ -100,12 +100,12 @@ display: flex;
 .audiocssestilo h2 {
   width: 135px;
 }
+#play, #playDos, #playtres, #playPrincipal, #stopPrincipal, #stoptres, #stopDos, #stop{
+  width: 60px;
+margin: 10px;
+font-size: small;}
 
-.myAudio, .myAudioDos, .myAudioTres, .myAudioPrincipal{
-  width: 60%;
-  padding-left: 3em;
 
-}
 #album-coverTres{
   margin-left: 28px;
 }
@@ -211,16 +211,6 @@ p.card-text, .card-body{
 }
 
 
-/*pagina de entrevista y video*/
-
-.full{
-  color: azure !important;
-}
-
-.contenedorestilosForm{
-  padding: 3em;
-  background-image: url("../img/mix.jpg");
-}
 
 
 /*pagina de  biografia desarrollador*/ 

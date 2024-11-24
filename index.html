@@ -66,34 +66,21 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/home/azul-mac.jpg" width="100%" height="100%" >
-              <div class="container">
-                <div class="carousel-caption text-start">
-                  <h1>Example headline.</h1>
-                  <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                </div>
-              </div>
+                <img src="img/home/azul-mac.jpg" width="800px" height="550px" >
+             
             </div>
             <div class="carousel-item">
              <img src="img/home/combinadomacdemarco..jpg" alt="grupojunto" width="100%" height="100%">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Another example headline.</h1>
-                  <p>Some representative placeholder content for the second slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                </div>
-              </div>
+            
+             
             </div>
             
             <div class="carousel-item">
              <img src="img/home/grupo.jpg" alt="cantando"  width="100%" height="100%">
-              <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>One more for good measure.</h1>
-                  <p>Some representative placeholder content for the third slide of this carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                </div>
+            
+             
+                
+                
               </div>
             </div>
           </div>
@@ -176,34 +163,39 @@
   
              <div class="col-md-7 order-md-2 d-none d-lg-block">
                 <div class="playlistSecundarias">
-                  <div class="audiocssestilo mb-4">
-                    <h2 id="song-titleUno">My kind of woman</h2>  
+                  <div class="audiocssestilo mb-4"> 
+                     <h2 id="song-titleUno">My kind of woman</h2>  
                       <img id="album-coverUno" src="img/home/mykind.jpeg" alt="Portada del álbum" class="img-fluid" width="100" height="100" >  
-                      <br>    
-                      <audio id="myAudio" class="myAudio" controls>
-                        <source src="canciones/playlist/cancionuno.mp3" type="audio/mpeg">
-                      </audio>
-                      <p class="demoUno"></p> 
+                      <br> 
+                    <audio  class="audioPlayer"  src="canciones/playlist/cancionuno.mp3" ></audio>
+                    <br>
+                        <button  class="play btn btn-primary">PLAY</button>
+                        <button  class="stop btn btn-primary">STOP</button>
+                     
+                    
+                    
                   </div>
              
                   <div class="audiocssestilo mb-4">
                     <h2 id="song-titleDos">For the First Time</h2>  
                     <img id="album-coverDos" src="img/home/tapa.jpg" alt="Portada del álbum" class="img-fluid" width="100" height="100" >  
                     <br>  
-                    <audio id="myAudioDos" class="myAudioDos" controls>
-                      <source src="canciones/playlist/canciondos.mp3" type="audio/mpeg">
-                    </audio>
-                    <p class="demoDos"></p>    
+                    <audio class="audioPlayerDos" src="canciones/playlist/canciondos.mp3" ></audio>
+                    <br>
+                        <button  class="playDos btn btn-primary">PLAY</button>
+                        <button  class="stopDos btn btn-primary">STOP</button>
+                    
                   </div>
              
                   <div class="audiocssestilo mb-4"> 
                     <h2 id="song-titleTres">Heart to Heart</h2>  
                     <img id="album-coverUno" src="img/home/hearttoheart.jpeg" alt="Portada del álbum" class="img-fluid" width="100" height="100" >  
                     <br>  
-                    <audio id="myAudioTres" class="myAudioTres" controls>
-                      <source src="canciones/playlist/canciontres.mp3" type="audio/mpeg">
-                    </audio>
-                    <p class="demoTres"></p>
+                    <audio class="audioPlayertres" src="canciones/playlist/canciontres.mp3"></audio>
+                    <br>
+                        <button  class="playtres btn btn-primary">PLAY</button>
+                        <button  class="stoptres btn btn-primary">STOP</button>
+
                   </div>
                 </div> 
              </div> 
@@ -214,12 +206,15 @@
                   <div class="col col-3">
                     <img src="img/home/mykind.jpeg" alt="Portada del álbum" class="img-fluid" width="100" height="100">  
                   </div>
+                  <!--PRIMER CANCION-->
                   <div class="col col-6"> <!-- Ocupa 9 columnas y centra el contenido -->
                     <div class="text-left">
                       <h2 id="song-titleUno">My kind of woman</h2>  
-                      <audio id="myAudio" class="myAudio" controls="">
-                        <source src="canciones/playlist/canciondos.mp3" type="audio/mpeg">
-                      </audio>
+                      <audio  class="audioPlayer"  src="canciones/playlist/cancionuno.mp3"></audio>
+                      <br>
+                      <button  class="play btn btn-primary" >PLAY</button>
+                      <button  class="stop btn btn-primary">STOP</button>
+                     
                     </div>
                   </div>
                </div>
@@ -231,9 +226,10 @@
                 <div class="col col-6"> <!-- Ocupa 9 columnas y centra el contenido -->
                   <div class="text-left">
                     <h2 id="song-titleDos">For the First Time</h2>  
-                    <audio id="myAudio" class="myAudio" controls="">
-                      <source src="canciones/playlist/cancionuno.mp3" type="audio/mpeg">
-                    </audio>
+                    <audio  class="audioPlayerDos"  src="canciones/playlist/canciondos.mp3"></audio>
+                    <br>
+                    <button  class="playDos btn btn-primary">PLAY</button>
+                    <button  class="stopDos btn btn-primary">STOP</button>
                   </div>
                 </div>
               </div>
@@ -245,9 +241,13 @@
                 <div class="col col-6"> <!-- Ocupa 9 columnas y centra el contenido -->
                   <div class="text-left">
                     <h2 id="song-titleTres">Heart to Heart</h2>  
-                    <audio id="myAudio" class="myAudio" controls="">
-                      <source src="canciones/playlist/canciontres.mp3" type="audio/mpeg">
-                    </audio>
+                    <audio  class="audioPlayertres" src="canciones/playlist/canciontres.mp3"></audio>
+                    <br>
+                    <button  class="playtres btn btn-primary">PLAY</button>
+                    <button  class="stoptres btn btn-primary">STOP</button>
+                   
+                     
+                    
                   </div>
                 </div>
               </div>
@@ -258,10 +258,10 @@
         <h2 id="song-titleCuatro">Chamber of reflection - Mac DeMarco</h2>  
         <img id="album-coverCuatro" src="img/home/cancionprincipal.jpg" alt="Portada principal" class="img-fluid mb-4" width="400" height="400" >  
         <br>  
-        <audio class="myAudioPrincipal p-0" controls>
-          <source src="canciones/playlist/principal.mp3" type="audio/mpeg">
-        </audio>
-        <p class="demoPrincipal"></p>
+        <audio id="principal" src="canciones/playlist/principal.mp3"></audio>
+        <br>
+            <button  id="playPrincipal" class=" btn btn-primary">PLAY</button>
+            <button  id="stopPrincipal" class=" btn btn-primary">STOP</button>
       </div>
     </div>
 
@@ -288,7 +288,8 @@
         </div>
         <div>
         <a href="contacto/contacto.html" class="me-3 fs-2">CONTACTO</a>
-        <a href="https://www.instagram.com/tu-instagram" class="fs-3"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.instagram.com/macdemarcoarg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="fs-3"><i class="bi bi-instagram"></i></a>
+        <a href="desarrollador/desarrollador.html"   class="fs-3"><i class="bi bi-person-workspace"></i></a>
       </div>
       </footer>
     </div>
