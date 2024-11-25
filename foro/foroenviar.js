@@ -21,15 +21,17 @@ function renderCards() {
     // Crear tarjetas para cada comentario
     comentariosGuardados.forEach(comentario => {
         const card = `
-        <div class="card mb-3">
+        <div class=" card mb-3">
             <div class="card-header">
                 <strong>${comentario.nombre}</strong>
             </div>
-            <div class="card-body">
-                <p class="card-text">${comentario.comentarios}</p>
+            <div class="forocss card-body">
+                <p class="card-text forocss">${comentario.comentarios}</p>
             </div>
         </div>`;
+      
         resultadoDiv.innerHTML += card;
+        
     });
 }
 

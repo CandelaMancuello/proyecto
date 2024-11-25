@@ -113,6 +113,7 @@ display: flex;
 margin: 10px;
 font-size: small;
 background-color: #B57A2D ;   }
+
 #principalPlay, #principalStop{
   width: 90px;
   margin: 5px;
@@ -120,9 +121,7 @@ background-color: #B57A2D ;   }
   background-color: #B57A2D ;
 }
 
-#album-coverTres{
-  margin-left: 28px;
-}
+
 
 .navbar {
   background-color: #F58D01 !important;
@@ -232,8 +231,21 @@ p.card-text, .card-body{
 }
 
 
-
-
+#resultado{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+.forocss {
+  background-color: #009FF5;
+   
+}
+.forocss p.card-text{
+  background-color: #009FF5;
+}
+ .card.mb-3{
+  margin: 10px;
+}
 /*pagina de  biografia desarrollador*/ 
 .centrarcaja{
   justify-content:  center !important;
@@ -241,7 +253,14 @@ p.card-text, .card-body{
 }
 
 
+/*pagina personal*/
+h5{
+  font-size:3em;
+}
 
+h6 {
+ font-size:1.9rem;
+}
 
 
 
