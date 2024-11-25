@@ -99,7 +99,14 @@ display: flex;
 
 .audiocssestilo h2 {
   width: 135px;
+} 
+
+/*carrousel*/ 
+.carousel-inner{
+  justify-content: center !important;
+  text-align: center;
 }
+/*terminar esto */
 #play, #playDos, #playtres, #playPrincipal, #stopPrincipal, #stoptres, #stopDos, #stop{
   width: 60px;
 margin: 10px;
