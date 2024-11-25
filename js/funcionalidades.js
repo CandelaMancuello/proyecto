@@ -25,7 +25,7 @@ playButtons.forEach((playButton, index) => {
     playButton.addEventListener('click', function() {
         audioPlayers[index].play();  // Reproducir el audio correspondiente al botón presionado
         pausarLosDemas(audioPlayers[index]);
-        alert('El botón de play funciona');
+       
     });
 });
 
@@ -47,7 +47,7 @@ playDos.forEach((playButton, index) => {
     playButton.addEventListener('click', function() {
         audioPlayersDos[index].play();  // Reproducir el audio correspondiente al botón presionado
         pausarLosDemas(audioPlayersDos[index]);
-        alert('El botón de play funciona');
+      
     });
 });
 
@@ -70,7 +70,7 @@ playtres.forEach((playButton, index) => {
     playButton.addEventListener('click', function() {
         audioPlayerstres[index].play();  // Reproducir el audio correspondiente al botón presionado
         pausarLosDemas(audioPlayerstres[index]);
-        alert('El botón de play funciona');
+       
     });
 });
 
@@ -82,7 +82,7 @@ stoptres.forEach((stoptres, index) => {
     });
 });
 
-//CANCION PRINCIPAL sin recorrer el array porque por alguna razon que no recuerdo est en desltop como en mobile sin problema
+//CANCION PRINCIPAL sin recorrer el array solo es 1 cancion esta en desktop y mobile
 
 
 document.addEventListener('DOMContentLoaded', function() {  
