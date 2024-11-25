@@ -24,9 +24,11 @@ const stopButtons = document.querySelectorAll('.stop');  // Todos los botones de
 playButtons.forEach((playButton, index) => {
     playButton.addEventListener('click', function() {
         audioPlayers[index].play();  // Reproducir el audio correspondiente al botón presionado
+        pausarLosDemas(audioPlayers[index]);
         alert('El botón de play funciona');
     });
 });
+
 
 // Recorremos todos los botones de stop
 stopButtons.forEach((stopButton, index) => {
@@ -44,6 +46,7 @@ const stopDos = document.querySelectorAll('.stopDos');  // Todos los botones de 
 playDos.forEach((playButton, index) => {
     playButton.addEventListener('click', function() {
         audioPlayersDos[index].play();  // Reproducir el audio correspondiente al botón presionado
+        pausarLosDemas(audioPlayersDos[index]);
         alert('El botón de play funciona');
     });
 });
@@ -66,6 +69,7 @@ const stoptres = document.querySelectorAll('.stoptres');  // Todos los botones d
 playtres.forEach((playButton, index) => {
     playButton.addEventListener('click', function() {
         audioPlayerstres[index].play();  // Reproducir el audio correspondiente al botón presionado
+        pausarLosDemas(audioPlayerstres[index]);
         alert('El botón de play funciona');
     });
 });
@@ -81,17 +85,30 @@ stoptres.forEach((stoptres, index) => {
 //CANCION PRINCIPAL sin recorrer el array porque por alguna razon que no recuerdo est en desltop como en mobile sin problema
 
 
-
+document.addEventListener('DOMContentLoaded', function() {  
 const principal = document.getElementById('principal');
-const play= document.getElementById('playPrincipal');
-const stop= document.getElementById('stopPrincipal');
+const play = document.getElementById('principalPlay');
+const stop = document.getElementById('principalStop'); 
 
 play.addEventListener('click', function() {
-     principal.play(); 
+    principal.play(); 
 });
 
-stop.addEventListener('click', function() {
-    principal.pause(); 
-    principal.currentTime = 0;
+stop.addEventListener('click', function() {  
+    principal.pause();   
+    principal.currentTime = 0;  
+    console.log('Botón de stop presionado');  
+}); 
+
 });
-//galeria carrosel manual//
+
+
+var audios = document.querySelectorAll('audio');
+function pausarLosDemas(audioActual) {
+     for (var i = 0; i < audios.length; i++) {
+        if (audioActual !== audios[i]) {
+            audios[i].pause();
+            audios[i].currentTime = 0;
+        }
+    }
+}
